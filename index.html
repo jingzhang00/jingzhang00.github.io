@@ -1,0 +1,231 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <!-- Title -->
+    <title>Jing Zhang</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1000">
+
+    <!-- Isotope JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+    </style>
+  </head>
+
+  <body id="body">
+
+    <div id="main">
+      <div id="intro">
+        <div id="intro-text">
+          <h1>Jing Zhang</h1>
+          <p style="font-size:12pt">
+            I’m currently a second-year master student’s at the Chalmers University of Technology, majoring in System, Control and Mechatronics, under the supervision of <a href="https://sites.google.com/view/craft-laboratory/team/karinne-ramirez-amaro?authuser=0">Prof. Karinne Ramirez-Amaro</a>. Before that, I obtained my bachelor’s degree in Microelectronics Science and Engineering from the University of Electronic Science and Technology of China.
+          </p>
+          <p style="font-size:12pt">
+            I have a broad range of interests and my research interests lie at their intersection: human-centered robotics.
+            <br>
+            <a href="mailto:jingzhang0704@gmail.com">Email</a> &nbsp;/&nbsp;
+            <a href="data/Resume.pdf">CV</a> &nbsp;/&nbsp;
+            <a href="https://github.com/jingzhang00">Github</a> &nbsp;/&nbsp;
+            <a href="https://www.linkedin.com/in/jingzhang00/">LinkedIn</a> &nbsp;/&nbsp;
+            <br>
+          </p>
+        </div>
+        <div id="intro-image">
+          <a href="images/selfie.png"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/selfie.png" class="hoverZoomLink"></a>
+        </div>
+      </div>
+
+      <div id="filters" class="button-group">
+        <!-- <button class="button" data-filter="*">Show All</button> -->
+        <button class="button is-checked" data-filter=".news">News</button>
+        <button class="button" data-filter=".publication">Research</button>
+        <button class="button" data-filter=".project">Project</button>
+<!--        <button class="button" data-filter=".misc">Misc</button>-->
+      </div>
+
+      <div class="grid">
+
+        <!-- News -->
+        <div class="list-item news" data-category="news">
+          <p class="date">2023</p>
+        </div>
+
+        <div class="list-item news" data-category="news">
+          <p class="date">Oct.</p> Lucky to give a presentation on Chalmers workshop: <a href="https://www.chalmers.se/en/current/calendar/interpretable-approaches-in-human-machine-interaction/">Interpretable approaches in human-machine interaction</a>
+        </div>
+
+        <div class="list-item news" data-category="news">
+          <p class="date">Sept.</p> First paper is submitted to ICRA 2024.
+        </div>
+
+        <div class="list-item news" data-category="news">
+          <p class="date">Jun.</p> Started to work on my first personal project!
+        </div>
+
+        <!-- Publications -->
+        <div class="list-item publication" data-category="publication">
+          <a href="https://github.com/jingzhang00/RL_operator" class="thumbnail">
+            <video playsinline="" muted="" autoplay="" loop="" width="180px">
+              <source src="images/RL_operator.mp4" type="video/mp4">
+            </video>
+          </a>
+          <div class="project-description">
+            <h3><a href="https://github.com/jingzhang00/RL_operator">Hierarchical Reinforcement Learning based on Planning Operators</a></h3>
+            <p>
+              <strong>Jing Zhang</strong>, Karinne Ramirez-Amaro<br>
+                <i>Submitted to IEEE International Conference on Robotics and Automation (ICRA) 2024</i><br>
+                <a href="https://arxiv.org/abs/2309.14237">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://github.com/jingzhang00/RL_operator">Code</a>
+                <br> <!-- TODO: extra spaces until I figure out the margin bug. -->
+            </p>
+          </div>
+        </div>
+
+
+
+        <!-- projects -->
+        <!-- <div class="list-item project description" data-category="project">
+          Some of my slides can be found <a href="https://slides.com/andyzeng">here</a>
+        </div> -->
+
+        <div class="list-item project" data-category="project">
+          <a href="https://github.com/jingzhang00/colorization" class="thumbnail">
+            <img src="images/dml_intro.png" alt="" />
+          </a>
+          <div class="project-description">
+            <h3><a href="data/dml_report.pdf">Diffusion Model and ControlNet Based Image Colorization</a></h3>
+            <p>
+              Course Project<br>
+                <a href="https://github.com/jingzhang00/colorization">Code</a>
+                <br> <!-- TODO: extra spaces until I figure out the margin bug. -->
+            </p>
+          </div>
+        </div>
+
+        <div class="list-item project" data-category="project">
+          <a href="https://github.com/jingzhang00/rrdtinformed" class="thumbnail">
+            <video playsinline="" muted="" autoplay="" loop="" width="180px">
+              <source src="images/path_planning.mp4" type="video/mp4">
+            </video>
+          </a>
+          <div class="project-description">
+            <h3><a href="https://github.com/jingzhang00/rrdtinformed">Informed RRdT</a></h3>
+            <p>
+              Project<br>
+                <a href="https://github.com/jingzhang00/rrdtinformed">Code</a>
+                <br> <!-- TODO: extra spaces until I figure out the margin bug. -->
+            </p>
+          </div>
+        </div>
+
+
+        <!-- Services -->
+<!--        <div class="list-item misc" data-category="misc">-->
+<!--          <p class="date">2023</p>Associate Editor, IEEE International Conference on Robotics and Automation (ICRA)-->
+<!--        </div>-->
+
+
+
+      </div>
+
+      <div id="footer"><a href="https://andyzeng.github.io/">Website Template</a>.</div>
+
+    </div>
+
+    <script>
+
+      // Isotope grid.
+      var $grid = $('.grid').isotope({
+        itemSelector: '.list-item',
+        layoutMode: 'fitRows',
+        transitionDuration: 0,
+        stagger: 10,
+        initLayout: false,
+        getSortData: {
+          name: '.name',
+          symbol: '.symbol',
+          number: '.number parseInt',
+          category: '[data-category]',
+          weight: function( itemElem ) {
+            var weight = $( itemElem ).find('.weight').text();
+            return parseFloat( weight.replace( /[\(\)]/g, '') );
+          }
+        }
+      });
+
+      // Bind filter button click.
+      $('#filters').on( 'click', 'button', function() {
+        var filterValue = $( this ).attr('data-filter');
+        localStorage.setItem('filterValue', filterValue);
+        $grid.isotope({ filter: filterValue });
+      });
+
+      // Change is-checked class on buttons.
+      $('.button-group').each( function( i, buttonGroup ) {
+        var $buttonGroup = $( buttonGroup );
+        $buttonGroup.on( 'click', 'button', function() {
+          $buttonGroup.find('.is-checked').removeClass('is-checked');
+          $( this ).addClass('is-checked');
+        });
+      });
+
+      function update_isotope() {
+        // Retrieve cached button click.
+        var defaultFilterValue = localStorage.getItem('filterValue');
+        if (defaultFilterValue == null) {
+          defaultFilterValue = ".news"
+        }
+        $grid.isotope({ filter: defaultFilterValue });
+        var buttons = document.getElementsByClassName("button");
+        for (var currButton of buttons) {
+          if (currButton.getAttribute('data-filter') == defaultFilterValue) {
+            currButton.classList.add('is-checked');
+          } else {
+            currButton.classList.remove('is-checked');
+          }
+        }
+      }
+
+      function toggle_bio() {
+        var x = document.getElementById("more-bio");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+
+      function toggle_newss() {
+        var x = document.getElementById("main-news");
+        var y = document.getElementById("more-newss");
+        var b = document.getElementById("toggle_news_button")
+        if (y.style.display === "none") {
+          x.style.display = "none";
+          y.style.display = "block";
+          b.innerHTML = "Show less"
+          update_isotope();
+        } else {
+          x.style.display = "block";
+          y.style.display = "none";
+          b.innerHTML = "Show more"
+          update_isotope();
+        }
+      }
+
+      update_isotope();
+
+    </script>
+  </body>
+</html>
