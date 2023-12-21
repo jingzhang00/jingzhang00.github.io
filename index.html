@@ -21,6 +21,25 @@
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
     </style>
+    <style>
+    .list-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 8px;
+    }
+
+    .list-item .date {
+      width: 60px;
+      flex-shrink: 0;
+      margin-right: 15px;
+    }
+
+    .list-item .content {
+      flex-grow: 1;
+      line-height: 1.6;
+    }
+
+  </style>
   </head>
 
   <body id="body">
@@ -61,6 +80,14 @@
       <div class="grid">
 
         <!-- News -->
+        <div class="list-item news" data-category="news">
+          <p class="date">2024</p>
+        </div>
+
+        <div class="list-item news" data-category="news">
+          <p class="date">Jan.</p> <div class="content">I will join <a href="https://codesign-lab.org/school2024/index.html">Representation mediated multimodality: grounded representation, reasoning and learning for interactive interpretation</a> with a full scholarship, which belongs to <a href="https://www.cost.eu/actions/CA18231/">EU COST Action  >  Multi3Generation </a></div>
+        </div>
+
         <div class="list-item news" data-category="news">
           <p class="date">2023</p>
         </div>
